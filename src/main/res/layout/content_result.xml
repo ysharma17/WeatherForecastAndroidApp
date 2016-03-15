@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    >
+<Button
+    android:id="@+id/DetailsBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="More Details"
+    android:layout_alignTop="@+id/ViewMapBtn"
+    android:layout_toLeftOf="@+id/WeatherImg"
+    android:layout_toStartOf="@+id/WeatherImg" />
+
+<Button
+    android:id="@+id/ViewMapBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View Map"
+    android:layout_marginTop="122dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/WeatherImg"
+    android:layout_alignEnd="@+id/WeatherImage" />
+
+<ImageView
+    android:id="@+id/fbImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/fb_icon"
+    android:layout_toRightOf="@id/ViewMapBtn"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_alignBottom="@+id/ViewMapBtn"
+    android:layout_alignTop="@+id/ViewMapBtn"/>
+<ImageView
+    android:id="@+id/WeatherImage"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+
+    android:layout_marginTop="46dp"
+    android:layout_below="@+id/MoreDetailsBtn"
+    android:layout_toRightOf="@+id/PrecipLabel"
+    android:layout_toEndOf="@+id/PrecipLabel" />
+<TextView
+    android:id="@+id/WeatherDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/WeatherImage"
+    android:layout_marginTop="20dp"
+    android:textAlignment="center"
+    android:textSize="25sp"/>
+
+<TextView
+    android:id="@+id/TempDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center"
+    android:layout_below="@id/WeatherDetails"
+    android:textSize="35sp"
+    android:layout_marginTop="20dp"
+    />
+<TextView
+    android:id="@+id/LowHighTempDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_below="@id/TempDetails"
+    android:textSize="20sp"
+    android:layout_marginTop="20dp"
+    />
+<TextView
+    android:id="@+id/Precip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Precipitation"
+    android:textSize="20sp"
+    android:layout_below="@id/LowHighTemp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/PrecipVal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+
+    android:layout_below="@id/LowHighTemp"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+<TextView
+    android:id="@+id/ChanceOfRain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Chance Of Rain"
+    android:textSize="20sp"
+    android:layout_below="@id/Precip"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/ChanceOfRain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:textSize="20sp"
+    android:layout_below="@id/Precip"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+
+<TextView
+    android:id="@+id/WindSpeedLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WindSpeed"
+    android:textSize="20sp"
+    android:layout_below="@id/ChanceOfRain"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/WindSpeed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:textSize="20sp"
+    android:layout_below="@id/ChanceOfRain"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+
+<TextView
+    android:id="@+id/DewPointLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DewPoint"
+    android:textSize="20sp"
+    android:layout_below="@id/WindSpeed"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/DewPointVal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:textSize="20sp"
+    android:layout_below="@id/WindSpeed"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+
+<TextView
+    android:id="@+id/Humidity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Humidity"
+    android:textSize="20sp"
+    android:layout_below="@id/DewPoint"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/HumidityVal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_below="@id/DewPoint"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+
+<TextView
+    android:id="@+id/Visibility"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Visibiliity"
+    android:textSize="20sp"
+    android:layout_below="@id/HumidityLabel"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/VisibilityVal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_below="@id/HumidityVal"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+
+<TextView
+    android:id="@+id/Sunrise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sunrise"
+    android:textSize="20sp"
+    android:layout_below="@id/Visibility"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/SunriseVal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_below="@id/VisibilityVal"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+
+<TextView
+    android:id="@+id/Sunset"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sunrise"
+    android:textSize="20sp"
+    android:layout_below="@id/Sunrise"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"/>
+<TextView
+    android:id="@+id/SunsetVal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_below="@id/Sunrise"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="20dp"/>
+</RelativeLayout>
+    </ScrollView>
